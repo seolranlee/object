@@ -1,5 +1,7 @@
 ## Chapter 01 객체, 설계
 
+[학습 코드](https://github.com/taeyoungs/study-object/tree/main/src/_01_ticket)
+
 - 추상적인 개념과 이론은 훌륭한 코드를 작성하는 데 필요한 도구일 뿐이다.
 - 개발자는 구체적인 코드를 만지며 손을 더럽힐 때 가장 많은 것을 얻어가는 존재다.
 
