@@ -103,7 +103,8 @@ class PeriodCondition implements DiscountCondition {
 }
 
 // 할인정책
-//  추상 클래스는 직접 인스턴스화할 수 없으며, 하위 클래스에서 구현되어야 하는 메서드를 포함할 수 있습니다.
+// 추상 클래스는 하나 이상의 추상 메서드를 포함할 수 있으며, 이러한 추상 메서드는 하위 클래스에서 반드시 구현해야 합니다. 
+// 추상 클래스는 공통된 인터페이스를 정의하고, 이를 상속받는 클래스들이 반드시 구현해야 하는 메서드들을 명시할 수 있습니다.
 abstract class DiscountPolicy {
   private conditions: DiscountCondition[];
 
@@ -122,7 +123,8 @@ abstract class DiscountPolicy {
   }
 
   // protected 키워드는 해당 멤버(필드 또는 메서드)가 자식 클래스에서 접근 가능하도록 지정하는 접근 제어자입니다. 이는 상속 관계에서 중요한 역할을 합니다.
-  // protected로 지정된 멤버는 그 멤버를 선언한 클래스와 해당 클래스를 상속받은 서브클래스에서 접근할 수 있습니다. 즉, 외부 클래스에서는 접근할 수 없지만, 해당 클래스를 상속한 클래스에서는 접근할 수 있습니다.
+  // protected로 지정된 멤버는 그 멤버를 선언한 클래스와 해당 클래스를 상속받은 서브클래스에서 접근할 수 있습니다. 
+  // 즉, 외부 클래스에서는 접근할 수 없지만, 해당 클래스를 상속한 클래스에서는 접근할 수 있습니다.
   protected abstract getDiscountAmount(screening: Screening): Money;
 }
 
