@@ -1,0 +1,18 @@
+- 다형성
+    - 크게 대단한 의미는 아니다
+        - 어떤 방법이든 개념적으로 다양한 형태만 지원하면 모양새면 가능
+    - 그래도 일반적으로는 ‘포함 다형성’을 말함
+- Prototype
+    - 자바스크립트에서는 class가 불완전하다
+        - 자바스크립트는 왜 prototype을 선택했을까
+            - https://medium.com/@limsungmook/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-997f985adb42
+    - 타입스크립트까지 필요하냐는 의견도 있다고 함
+        - 다들 공감 못함
+- Self
+    - 자바스크립트 This와 비슷
+- Super 호출 의미
+    - 함수를 호출한다 => x
+    - 여기서부터 함수를 탐색한다 => o
+- Lodash 같은 유틸성 라이브러리 길어지면 type 잘 추론되냐?
+    - 추천 라이브러리 remeda
+        - https://www.npmjs.com/package/remeda
